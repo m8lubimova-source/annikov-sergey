@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Анников Сергей — Менеджер по продажам</title>
+<meta name="description" content="Резюме: Анников Сергей, менеджер по продажам. Больше четырёх лет в продажах: B2B и B2C, оптовые сделки и финансовые продукты.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --ink: #17202B;
+    --sec: #5B6573;
+    --acc: #1E4E8C;
+    --line: #D6DCE4;
+    --side: #F1F4F8;
+    --bg: #FFFFFF;
+    --chip: #FFFFFF;
+  }
+  :root { color-scheme: light; }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font-family: "Onest", system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    font-size: 16px; line-height: 26px;
+  }
+  a { color: inherit; text-decoration: none; }
+  a:hover { color: var(--acc); }
+  p { margin: 0; }
+  ul { margin: 0; padding: 0 0 0 20px; }
+  li { margin: 0 0 6px; }
+  li::marker { color: var(--sec); }
+
+  /* ---------- Desktop ≥ 1100 ---------- */
+  .page {
+    max-width: 1120px; margin: 0 auto; padding: 72px 0 96px;
+    display: grid; grid-template-columns: 320px 1fr; gap: 64px; align-items: start;
+  }
+  .side {
+    background: var(--side); border-radius: 20px; padding: 32px 28px;
+    display: flex; flex-direction: column; gap: 32px;
+    position: sticky; top: 24px;
+  }
+  .photo { display: block; width: 100%; height: auto; aspect-ratio: 568 / 520; object-fit: cover; border-radius: 12px; }
+  .print { display: none; }
+  .main { display: flex; flex-direction: column; gap: 48px; min-width: 0; }
+
+  .head .name { font-size: 44px; line-height: 52px; font-weight: 700; letter-spacing: -0.015em; margin: 0; }
+  .head .title { font-size: 20px; line-height: 28px; font-weight: 500; color: var(--acc); margin: 12px 0 0; }
+  .btn {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    margin-top: 20px; padding: 10px 20px; border: 1.5px solid var(--acc); border-radius: 999px;
+    color: var(--acc); font-size: 15px; line-height: 20px; font-weight: 500;
+    transition: background .15s, color .15s;
+  }
+  .btn:hover { background: var(--acc); color: var(--bg); }
+
+  .section { display: flex; flex-direction: column; gap: 16px; }
+  .label {
+    font-size: 13px; line-height: 16px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+    color: var(--acc); padding-bottom: 10px; border-bottom: 1px solid var(--line); margin: 0;
+  }
+  .items { display: flex; flex-direction: column; gap: 16px; }
+  .item .k { font-size: 13px; line-height: 18px; color: var(--sec); }
+  .item .v { font-size: 16px; line-height: 22px; font-weight: 500; margin-top: 4px; overflow-wrap: anywhere; }
+  .item .n { font-size: 14px; line-height: 20px; color: var(--sec); margin-top: 4px; }
+
+  .about { display: flex; flex-direction: column; gap: 12px; }
+
+  .jobs { display: flex; flex-direction: column; gap: 40px; }
+  .job-top { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; }
+  .company { font-size: 20px; line-height: 26px; font-weight: 600; margin: 0; }
+  .dates { font-size: 14px; line-height: 20px; color: var(--sec); white-space: nowrap; }
+  .what { font-size: 14px; line-height: 20px; color: var(--sec); margin-top: 4px; }
+  .role { font-size: 16px; line-height: 22px; font-weight: 500; color: var(--acc); margin: 8px 0; }
+
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; }
+  .chips li {
+    margin: 0; padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--chip);
+    font-size: 14px; line-height: 20px;
+  }
+
+  .contacts-card { display: none; }
+  .stack-only { display: none; }
+
+  /* ---------- Tablet & mobile < 1100 ---------- */
+  @media screen and (max-width: 1099px) {
+    .page { display: flex; flex-direction: column; align-items: stretch; gap: 40px; max-width: 768px; padding: 48px 40px 64px; }
+    .side { display: contents; }
+    .side > .photo, .side > .s-contacts { display: none; }
+    .main { display: contents; }
+    .head-row { display: flex; align-items: center; gap: 28px; order: 1; }
+    .head-row .photo { width: 160px; flex: none; border-radius: 14px; }
+    .head .name { font-size: 36px; line-height: 44px; }
+    .head .title { font-size: 18px; line-height: 26px; margin-top: 10px; }
+    .contacts-card {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 16px; order: 2;
+      background: var(--side); border-radius: 16px; padding: 24px;
+    }
+    .s-about { order: 3; } .s-exp { order: 4; } .s-skills { order: 5; } .s-langs { order: 6; } .s-edu { order: 7; }
+    .chips li { background: var(--side); border-color: var(--line); }
+    .stack-only { display: flex; }
+    .desk-only { display: none; }
+  }
+  @media screen and (max-width: 599px) {
+    body { font-size: 15px; line-height: 24px; }
+    .page { padding: 28px 20px 64px; gap: 32px; }
+    .head-row { gap: 16px; }
+    .head-row .photo { width: 96px; border-radius: 10px; }
+    .head .name { font-size: 30px; line-height: 36px; }
+    .head .title { font-size: 17px; line-height: 24px; margin-top: 6px; }
+    .head .btn { display: none; }
+    .btn-wide { display: flex !important; margin: 0; order: 1; width: 100%; }
+    .contacts-card { grid-template-columns: 1fr; padding: 20px; }
+    .label { font-size: 12px; }
+    .item .v { font-size: 15px; }
+    .job-top { flex-direction: column; gap: 0; }
+    .company { font-size: 18px; line-height: 24px; }
+    .dates, .what { font-size: 13px; }
+    .role { font-size: 15px; }
+    .jobs { gap: 32px; }
+  }
+  .btn-wide { display: none !important; }
+  @media screen and (max-width: 599px) { .btn-wide { display: flex !important; } }
+
+  /* ---------- Print / PDF: A4, two columns ---------- */
+  @page { size: A4; margin: 0; }
+  @media print {
+    :root { --ink: #17202B; --sec: #5B6573; --acc: #1E4E8C; --line: #D6DCE4; --side: #F1F4F8; --bg: #FFFFFF; --chip: #FFFFFF; }
+    body { font-size: 9pt; line-height: 13.5pt; -webkit-print-color-adjust: exact; print-color-adjust: exact; background: #FFFFFF; }
+    .page { display: none !important; }
+    .print { display: block; }
+    .sheet { width: 210mm; height: 297mm; display: grid; grid-template-columns: 190pt 1fr; overflow: hidden; break-after: page; }
+    .sheet:last-child { break-after: auto; }
+    .p-side { background: var(--side); padding: 32pt 24pt; display: flex; flex-direction: column; gap: 22pt; }
+    .p-main { padding: 32pt 32pt; display: flex; flex-direction: column; gap: 20pt; min-width: 0; }
+    .print .photo { border-radius: 8pt; }
+    .print .btn { display: none !important; }
+    .head .name { font-size: 26pt; line-height: 30pt; }
+    .head .title { font-size: 11pt; line-height: 15pt; margin-top: 6pt; }
+    .section { gap: 10pt; }
+    .label { font-size: 8pt; line-height: 10pt; padding-bottom: 6pt; }
+    .items { gap: 10pt; }
+    .item .k { font-size: 7.5pt; line-height: 10pt; }
+    .item .v { font-size: 9pt; line-height: 12.5pt; margin-top: 2pt; }
+    .item .n { font-size: 8pt; line-height: 11pt; margin-top: 2pt; }
+    .about { gap: 6pt; }
+    .jobs { gap: 18pt; }
+    .job { break-inside: avoid-page; }
+    .company { font-size: 12pt; line-height: 16pt; }
+    .dates, .what { font-size: 8.5pt; line-height: 12pt; }
+    .role { font-size: 9.5pt; line-height: 13pt; margin: 5pt 0; }
+    li { margin-bottom: 3pt; }
+    ul { padding-left: 14pt; }
+    .chips { gap: 4pt; }
+    .chips li { padding: 2pt 7pt; font-size: 8pt; line-height: 11pt; background: #FFFFFF; }
+    a { color: inherit; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <aside class="side">
+    <img class="photo" src="photo.jpg" alt="Сергей Анников" width="568" height="520">
+
+    <section class="section s-contacts">
+      <h2 class="label">Контакты</h2>
+      <div class="items">
+        <div class="item"><div class="k">Телефон</div><div class="v"><a href="tel:+79001440263">+7&nbsp;(900)&nbsp;144-02-63</a></div></div>
+        <div class="item"><div class="k">Почта</div><div class="v"><a href="mailto:annikovser@gmail.com">annikovser@gmail.com</a></div></div>
+        <div class="item"><div class="k">Город</div><div class="v">Мытищи, Московская область</div></div>
+        <div class="item"><div class="k">Формат работы</div><div class="v">Офис в Москве, командировки</div></div>
+      </div>
+    </section>
+
+    <section class="section s-langs">
+      <h2 class="label">Языки</h2>
+      <div class="items">
+        <div class="item"><div class="k">Русский</div><div class="v">Родной</div></div>
+        <div class="item"><div class="k">Английский</div><div class="v">B1</div><div class="n">Читаю статьи, смотрю видео, общаюсь на бытовые темы в поездках</div></div>
+      </div>
+    </section>
+
+    <section class="section s-edu">
+      <h2 class="label">Образование</h2>
+      <div class="items">
+        <div class="item"><div class="k">Бакалавриат, выпуск 2029</div><div class="v">Университет «Синергия», Москва</div><div class="n">Психология, практическая психология</div></div>
+        <div class="item"><div class="k">Неоконченное, 2023</div><div class="v">МГТУ им.&nbsp;Н.&nbsp;Э.&nbsp;Баумана</div><div class="n">Лесное дело, экология</div></div>
+      </div>
+    </section>
+
+    <section class="section s-skills">
+      <h2 class="label">Навыки</h2>
+      <ul class="chips">
+        <li>B2B-продажи</li><li>B2C-продажи</li><li>Активные продажи</li><li>Холодный поиск клиентов</li>
+        <li>Переговоры с владельцами бизнеса и руководителями</li><li>Воронка продаж</li><li>Коммерческие предложения</li>
+        <li>Допродажи</li><li>Крупные сделки</li><li>Работа с торговыми сетями</li>
+        <li>Маркетплейсы: Wildberries, Ozon, Яндекс Маркет</li><li>Инвестиционные продукты</li><li>Битрикс24</li>
+        <li>1С: отчёты и анализ</li><li>AI для управления данными</li><li>MS Office</li>
+      </ul>
+    </section>
+  </aside>
+
+  <main class="main">
+    <div class="head-row stack-only">
+      <img class="photo" src="photo.jpg" alt="" width="568" height="520">
+      <div class="head">
+        <h1 class="name">Анников Сергей</h1>
+        <p class="title">Менеджер по продажам</p>
+        <a class="btn" href="annikov-sergey-resume.pdf" download="Анников Сергей — Менеджер по продажам.pdf">Скачать PDF</a>
+      </div>
+    </div>
+    <a class="btn btn-wide" href="annikov-sergey-resume.pdf" download="Анников Сергей — Менеджер по продажам.pdf">Скачать PDF</a>
+
+    <div class="contacts-card">
+      <div class="item"><div class="k">Телефон</div><div class="v"><a href="tel:+79001440263">+7&nbsp;(900)&nbsp;144-02-63</a></div></div>
+      <div class="item"><div class="k">Почта</div><div class="v"><a href="mailto:annikovser@gmail.com">annikovser@gmail.com</a></div></div>
+      <div class="item"><div class="k">Город</div><div class="v">Мытищи, Московская область</div></div>
+      <div class="item"><div class="k">Формат работы</div><div class="v">Офис в Москве, командировки</div></div>
+    </div>
+
+    <div class="head desk-only">
+      <h1 class="name">Анников Сергей</h1>
+      <p class="title">Менеджер по продажам</p>
+      <a class="btn" href="annikov-sergey-resume.pdf" download="Анников Сергей — Менеджер по продажам.pdf">Скачать PDF</a>
+    </div>
+
+    <section class="section s-about">
+      <h2 class="label">Обо мне</h2>
+      <div class="about">
+        <p>Больше четырёх лет в&nbsp;продажах: B2B и&nbsp;B2C, оптовые сделки и&nbsp;финансовые продукты. Стабильно выполняю планы и&nbsp;попадаю в&nbsp;число лучших: в&nbsp;ФИНАМ несколько раз входил в&nbsp;топ-3 из&nbsp;примерно 100&nbsp;менеджеров, в&nbsp;Total Research несколько раз занимал первое место в&nbsp;отделе.</p>
+        <p>Сейчас веду оптовые сделки от&nbsp;300&nbsp;тыс. до&nbsp;12&nbsp;млн&nbsp;₽ с&nbsp;топовыми селлерами на&nbsp;маркетплейсах и&nbsp;торговыми сетями. В&nbsp;ФИНАМ ежемесячно привлекал в&nbsp;продукты компании около 10&nbsp;млн&nbsp;₽ клиентских денег.</p>
+        <p>Веду сделку целиком: нахожу клиента, выясняю, что ему нужно, готовлю предложение, провожу встречу и&nbsp;довожу до&nbsp;оплаты. Не&nbsp;боюсь холодных звонков и&nbsp;отказов, легко нахожу общий язык и&nbsp;с&nbsp;частными клиентами, и&nbsp;с&nbsp;владельцами бизнеса.</p>
+        <p>Готов развивать бизнес, в&nbsp;котором работаю, предлагать новые идеи, а&nbsp;главное&nbsp;— реализовывать их и&nbsp;доводить до&nbsp;конца.</p>
+      </div>
+    </section>
+
+    <section class="section s-exp">
+      <h2 class="label">Опыт работы · 4&nbsp;года 3&nbsp;месяца</h2>
+      <div class="jobs">
+        <article class="job">
+          <div class="job-top"><h3 class="company">Сегура Центр</h3><span class="dates">Апрель 2025&nbsp;— сейчас</span></div>
+          <div class="what">Оптовый производитель тафтинговых ковров, больше 20&nbsp;лет на&nbsp;рынке</div>
+          <div class="role">Менеджер по работе с ключевыми клиентами</div>
+          <ul>
+            <li>Сделки от&nbsp;300&nbsp;тыс. до&nbsp;12&nbsp;млн&nbsp;₽, средний чек&nbsp;— около 1&nbsp;млн&nbsp;₽;</li>
+            <li>Веду крупных оптовых клиентов: продавцов из&nbsp;топа Wildberries с&nbsp;оборотами в&nbsp;миллиарды рублей, крупных региональных продавцов, торговые сети;</li>
+            <li>Ищу новых клиентов сам: нахожу магазины через Яндекс Карты и&nbsp;поиск, выхожу на&nbsp;владельца, выясняю, как идут продажи, и&nbsp;делаю предложение. В&nbsp;среднем 1&nbsp;встреча на&nbsp;30–40 холодных звонков;</li>
+            <li>В&nbsp;каждую сделку включаю позиции, выгодные компании: новые дизайны и&nbsp;залежавшийся товар. Убеждаю клиентов брать не&nbsp;только привычные хиты продаж;</li>
+            <li>Активно участвовал в&nbsp;сделке с&nbsp;Леруа&nbsp;Мерлен: около года согласований от&nbsp;первого контакта до&nbsp;поставок;</li>
+            <li>Веду переговоры напрямую с&nbsp;владельцами бизнеса, а&nbsp;в&nbsp;сетях&nbsp;— с&nbsp;руководителями отделов;</li>
+            <li>Работаю с&nbsp;«Опус», участвую в&nbsp;переговорах с&nbsp;одной из&nbsp;крупнейших сетей строительных магазинов;</li>
+            <li>Запустил прямые продажи на&nbsp;Wildberries, Ozon и&nbsp;Яндекс Маркете: раньше компания работала там только через посредников;</li>
+            <li>Отдел работает по&nbsp;общему плану: от&nbsp;1&nbsp;млн&nbsp;м² продукции в&nbsp;месяц.</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <div class="job-top"><h3 class="company">ФИНАМ</h3><span class="dates">Октябрь 2022&nbsp;— декабрь 2023</span></div>
+          <div class="what">Один из крупнейших брокеров России</div>
+          <div class="role">Менеджер по продажам</div>
+          <ul>
+            <li>Ежемесячно привлекал в&nbsp;продукты компании около 10&nbsp;млн&nbsp;₽ клиентских денег;</li>
+            <li>Стабильно выполнял ежемесячный план, несколько раз перевыполнял его больше чем в&nbsp;три раза;</li>
+            <li>Стабильно входил в&nbsp;топ-20 из&nbsp;примерно 100&nbsp;менеджеров отдела, несколько раз&nbsp;— в&nbsp;топ-3;</li>
+            <li>Работал с&nbsp;действующими клиентами брокерского обслуживания: мотивировал пополнять счёт и&nbsp;вкладывать свободные деньги в&nbsp;продукты компании;</li>
+            <li>Продавал доверительное управление, стратегии автоследования, опционы на&nbsp;Московской бирже, участие в&nbsp;IPO и&nbsp;первичных размещениях облигаций;</li>
+            <li>Перед каждым предложением изучал портфель клиента и&nbsp;подбирал продукт под&nbsp;его задачи;</li>
+            <li>Прошёл обучение по&nbsp;фондовому рынку: акции, облигации, IPO, опционы, порядок расчётов на&nbsp;бирже.</li>
+          </ul>
+        </article>
+
+        <article class="job">
+          <div class="job-top"><h3 class="company">Total Research</h3><span class="dates">Май 2021&nbsp;— сентябрь 2022</span></div>
+          <div class="what">Доступ к&nbsp;зарубежной бирже, аналитика и&nbsp;торговые роботы для&nbsp;частных инвесторов</div>
+          <div class="role">Менеджер по продажам</div>
+          <ul>
+            <li>План&nbsp;— от&nbsp;3&nbsp;новых клиентов и&nbsp;от&nbsp;200&nbsp;тыс.&nbsp;₽ пополнений в&nbsp;месяц. Приводил от&nbsp;3 до&nbsp;10&nbsp;новых клиентов в&nbsp;месяц и&nbsp;после первых двух месяцев стабильно выполнял план;</li>
+            <li>Стабильно входил в&nbsp;топ-3–4 из&nbsp;10&nbsp;менеджеров, несколько раз занимал первое место;</li>
+            <li>Искал клиентов холодными звонками по&nbsp;базе: продукт был малоизвестным, доверие выстраивал с&nbsp;нуля;</li>
+            <li>Вёл весь цикл сделки: звонок, выяснение потребностей, коммерческое предложение, встреча, открытие и&nbsp;пополнение счёта.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+</div>
+
+<div class="print" aria-hidden="true"></div>
+<script>
+  // Печатная версия (PDF): два листа A4, как в макете Фигмы. Собирается из того же текста, что и сайт.
+  (function () {
+    var q = function (s) { return document.querySelector('.page ' + s); };
+    var c = function (el) { return el.cloneNode(true); };
+    function sheet(sideEls, mainEls) {
+      var sh = document.createElement('div'); sh.className = 'sheet';
+      var a = document.createElement('div'); a.className = 'p-side';
+      var m = document.createElement('div'); m.className = 'p-main';
+      sideEls.forEach(function (e) { a.appendChild(e); });
+      mainEls.forEach(function (e) { m.appendChild(e); });
+      sh.appendChild(a); sh.appendChild(m); return sh;
+    }
+    function expPart(label, jobs) {
+      var s = document.createElement('section'); s.className = 'section';
+      var h = document.createElement('h2'); h.className = 'label'; h.textContent = label;
+      var list = document.createElement('div'); list.className = 'jobs';
+      jobs.forEach(function (j) { list.appendChild(c(j)); });
+      s.appendChild(h); s.appendChild(list); return s;
+    }
+    var jobs = document.querySelectorAll('.page .job');
+    var expLabel = q('.s-exp .label').textContent;
+    var root = document.querySelector('.print');
+    root.appendChild(sheet(
+      [c(q('.side > .photo')), c(q('.s-contacts')), c(q('.s-langs')), c(q('.s-edu'))],
+      [c(q('.head.desk-only')), c(q('.s-about')), expPart(expLabel, [jobs[0]])]
+    ));
+    root.appendChild(sheet(
+      [c(q('.s-skills'))],
+      [expPart('Опыт работы · продолжение', [jobs[1], jobs[2]])]
+    ));
+  })();
+</script>
+</body>
+</html>
